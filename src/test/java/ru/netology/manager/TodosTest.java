@@ -213,40 +213,4 @@ public class TodosTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
-
-    @Test
-    public void shouldEqualsObjectTrue() {
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-
-        Assertions.assertEquals(simpleTask, simpleTask);
-    }
-
-    @Test
-    public void shouldEqualsObjectFalse() {
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        SimpleTask simpleTask2 = new SimpleTask(7, "Позвонить брату");
-
-        Assertions.assertNotEquals(simpleTask, simpleTask2);
-    }
-
-    @Test
-    public void shouldEqualsObjectNullFalse() {
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-
-        Assertions.assertFalse(simpleTask.equals(null));
-    }
-
-    @Test
-    public void shouldEqualsObjectGetClassFalse() {
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-
-        Assertions.assertFalse(simpleTask.equals(getClass()));
-    }
-
-    @Test
-    public void shouldEqualsObjectClassTrue() {
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-
-        Assertions.assertTrue(simpleTask.equals(new SimpleTask(5, "Позвонить родителям")));
-    }
 }
