@@ -1,7 +1,5 @@
 package domain;
 
-import domain.Task;
-
 public class Meeting extends Task {
     protected int id;
     protected String topic;

@@ -1,7 +1,5 @@
 package domain;
 
-import domain.Task;
-
 public class Epic extends Task {
     protected int id;
     protected String[] subtasks;
