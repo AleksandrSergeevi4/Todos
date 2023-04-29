@@ -47,7 +47,8 @@ public class TodosTest {
                 "Во вторник после обеда"
         ));
 
-        Task[] expected = {new SimpleTask(5, "Позвонить родителям"), new Epic(55, subtasks), new Meeting(555, "Выкатка 3й версии приложения", "Приложение НетоБанка", "Во вторник после обеда")};
+        Task[] expected = {new SimpleTask(5, "Позвонить родителям"), new Epic(55, subtasks),
+                new Meeting(555, "Выкатка 3й версии приложения", "Приложение НетоБанка", "Во вторник после обеда")};
         Task[] actual = todos.search("");
 
         Assertions.assertArrayEquals(expected, actual);
